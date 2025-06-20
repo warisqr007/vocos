@@ -1,0 +1,12 @@
+data:
+  class_path: data_modules.ResynthesisDataModule
+  init_args:
+    init_args:
+    data_dir: data/speakers
+    batch_size: 16
+    num_workers: 4
+    pin_memory: true
+    segment_size: 30720
+    code_hop_size: 320
+    sampling_rate: 16000
+    split: true

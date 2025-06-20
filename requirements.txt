@@ -1,0 +1,41 @@
+# --------- python --------- #
+numpy
+matplotlib
+pandas
+scipy
+ipykernel
+librosa
+resampy
+pyloudnorm
+scikit-learn
+onnxruntime
+pandas
+seaborn
+speechbrain
+transformers
+datasets
+# --------- pytorch --------- #
+torch
+# torchaudio
+# torchvision
+pytorch-lightning
+jsonargparse[signatures]
+torchmetrics
+
+# --------- loggers --------- #
+tensorboard
+wandb
+# neptune-client
+# mlflow
+# comet-ml
+
+# --------- custom --------- #
+git+https://github.com/descriptinc/audiotools
+
+# --------- misc --------- #
+tqdm
+rich
+pyrootutils
+python-dotenv
+debugpy
+einops

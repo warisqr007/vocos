@@ -1,0 +1,49 @@
+model:
+  class_path: modules.VocosVocoderModule
+  init_args:
+    sample_rate: 16000
+    encoder_dim: 512
+    vocoder_feature_args:
+      sample_rate: 16000
+      n_fft: 1024
+      win_length: 1024
+      hop_length: 320
+      n_mels: 80
+      f_min: 0.0
+      f_max: null
+      causal: true
+      pad_mode: "constant"
+    vocoder_args:
+      input_channels: 80
+      dim: 512
+      mlp_ratio: 3.0
+      kernel_size: 7
+      dilation: 1
+      norm: "weight_norm"
+      causal: true
+      pad_mode: "constant"
+      num_layers: 8
+      layer_scale_init_value: 1e-6
+    istft_head_args:
+      dim: 512
+      n_fft: 1024
+      hop_length: 320
+    lambdas:
+      mel_loss: 20.0
+      adv_feat_loss: 2.0
+      adv_gen_loss: 1.0
+      ped_loss: 20.0
+      hubert_loss: 100000.0
+      speaker_loss: 10.0
+    learning_rate: 0.0001
+    lr_betas: [0.8, 0.99]
+    lr_sch_gamma: 0.999996
+    decoder_pretrained: false
+    decoder_path: null
+trainer:
+  # Train, Validate, Test and Predict
+  # Device https://lightning.ai/docs/pytorch/stable/common/trainer.html#accelerator
+  accelerator: gpu # "cpu", "gpu", "tpu", "ipu", "auto"
+  devices: "0," # "2," for device id 2
+  num_nodes: 1 # https://lightning.ai/docs/pytorch/stable/common/trainer.html#num-nodes
+  max_epochs: 100
