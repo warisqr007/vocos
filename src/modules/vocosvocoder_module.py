@@ -8,10 +8,10 @@ import torch.nn as nn
 from audiotools import AudioSignal
 from torchmetrics import MinMetric, MeanMetric
 
-from src.models.moshi.modules import VocosBackbone, StreamingLogMelSpectrogram, ISTFTHead
-from src.models.components.discriminator import Discriminator
-from src.models.components.losses import L1Loss, MultiScaleSTFTLoss, MelSpectrogramLoss, GANLoss, LossPED, HuBERTLoss, SpeakerLoss
-from src.models.utils.data_classes import VocoderFeatureArgs, VocosVocoderArgs, ISTFTHeadArgs, Lambdas
+from src.components import VocosBackbone, StreamingLogMelSpectrogram, ISTFTHead
+from src.components.discriminator import Discriminator
+from src.components.losses import L1Loss, MultiScaleSTFTLoss, MelSpectrogramLoss, GANLoss
+from src.components.data_classes import VocoderFeatureArgs, VocosVocoderArgs, ISTFTHeadArgs, Lambdas
 
 
 

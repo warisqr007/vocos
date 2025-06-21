@@ -32,9 +32,6 @@ model:
       mel_loss: 20.0
       adv_feat_loss: 2.0
       adv_gen_loss: 1.0
-      ped_loss: 20.0
-      hubert_loss: 100000.0
-      speaker_loss: 10.0
     learning_rate: 0.0001
     lr_betas: [0.8, 0.99]
     lr_sch_gamma: 0.999996
