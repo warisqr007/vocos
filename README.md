@@ -5,18 +5,18 @@ So all the vanilla CNNs are replaced with causal CNNs and modified to work in st
 
 What makes vocos different from other typical GAN-based vocoders is that Vocos does not model audio samples in the time domain. Instead, it generates spectral coefficients, facilitating rapid audio reconstruction through inverse Fourier transform. This cuts down the processing time significantly and is very appropriate for streaming applications that require minimal latency.
 
+The model takes 50Hz log-melspectrogram as input (1024 window size, 320 hopsize) and produces 16KHz audio.
 
 Training follows the Generative Adversarial Network (GAN) objective as original but loss functions are changed to those proposed in the descript audio codec (see [repo](https://github.com/descriptinc/descript-audio-codec)).
 
-Visit our [demo website (coming soon)]() for audio samples. You can download the checkpoint from [here](https://huggingface.co/warisqr007/StreamingVocos/resolve/main/epoch%3D3.ckpt).
-
+Visit our [demo website (coming soon)]() for audio samples. 
 Refer below for original paper and audio samples.
 [Audio samples](https://gemelo-ai.github.io/vocos/) |
 Paper [[abs]](https://arxiv.org/abs/2306.00814) [[pdf]](https://arxiv.org/pdf/2306.00814.pdf)
 
 
 ## Checkpoints
-Coming soon
+You can download the checkpoint from [here](https://huggingface.co/warisqr007/StreamingVocos/resolve/main/epoch%3D3.ckpt).
 
 ## Usage
 
