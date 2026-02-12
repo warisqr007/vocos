@@ -9,7 +9,7 @@ The model takes 50Hz log-melspectrogram as input (1024 window size, 320 hopsize)
 
 Training follows the Generative Adversarial Network (GAN) objective as original but loss functions are changed to those proposed in the descript audio codec (see [repo](https://github.com/descriptinc/descript-audio-codec)).
 
-Visit our [demo website (coming soon)]() for audio samples. 
+Visit our [HF demo page](https://huggingface.co/spaces/warisqr007/StreamingVocos_16khz) for trying out the model. 
 Refer below for original paper and audio samples.
 [Audio samples](https://gemelo-ai.github.io/vocos/) |
 Paper [[abs]](https://arxiv.org/abs/2306.00814) [[pdf]](https://arxiv.org/pdf/2306.00814.pdf)
