@@ -8,7 +8,7 @@ What makes vocos different from other typical GAN-based vocoders is that Vocos d
 
 Training follows the Generative Adversarial Network (GAN) objective as original but loss functions are changed to those proposed in the descript audio codec (see [repo](https://github.com/descriptinc/descript-audio-codec)).
 
-Visit our [demo website (coming soon)]() for audio samples.
+Visit our [demo website (coming soon)]() for audio samples. You can download the checkpoint from [here](https://huggingface.co/warisqr007/StreamingVocos/resolve/main/epoch%3D3.ckpt)
 
 Refer below for original paper and audio samples.
 [Audio samples](https://gemelo-ai.github.io/vocos/) |
